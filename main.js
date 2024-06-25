@@ -8,9 +8,17 @@ function getRandomColor() {
 	console.log(color);
 	return color;
 }
+
 // change color of h1 to random color when button is clicked
-function changeColor() {
-	document.getElementsByClassName("box")[0].style.backgroundColor =
-		getRandomColor();
+function changeClassElmentColors(classElmentName) {
+	let divName = document.getElementsByClassName(classElmentName);
+	for (let i = 0; i < divName.length; i++) {
+		divName[i].style.backgroundColor = getRandomColor();
+	}
 }
-button.addEventListener("click", changeColor);
+
+function eventChange() {
+	changeClassElmentColors("box");
+}
+
+button.addEventListener("click", eventChange);
