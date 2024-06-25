@@ -19,4 +19,12 @@ function changeClassElmentColors(class_name) {
 function eventChange() {
 	changeClassElmentColors("box");
 }
-button.addEventListener("click", eventChange);
+button1.addEventListener("click", eventChange);
+// create boxes when button is clicked
+let container = document.getElementById("container");
+function createBoxes() {
+	let box = document.createElement("div");
+	box.classList.add("box");
+	container.appendChild(box);
+}
+button2.addEventListener("click", createBoxes);
