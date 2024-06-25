@@ -10,15 +10,13 @@ function getRandomColor() {
 }
 
 // change color of h1 to random color when button is clicked
-function changeClassElmentColors(classElmentName) {
-	let divName = document.getElementsByClassName(classElmentName);
+function changeClassElmentColors(class_name) {
+	let divName = document.getElementsByClassName(class_name);
 	for (let i = 0; i < divName.length; i++) {
 		divName[i].style.backgroundColor = getRandomColor();
 	}
 }
-
 function eventChange() {
 	changeClassElmentColors("box");
 }
-
 button.addEventListener("click", eventChange);
