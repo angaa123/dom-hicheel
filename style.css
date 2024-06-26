@@ -23,6 +23,63 @@ button {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
+	height: 50vh;
 	width: 100vw;
+}
+.gaduurh {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	background-color: #7dc2d8;
+	border-radius: 10px 10px 0% 0%;
+}
+.gaduurh h1 {
+	font-size: 70px;
+	font-weight: 800;
+}
+.audio_button_container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: fit-content;
+	margin: 50px;
+	gap: 30px;
+	background-color: #00688b;
+	border-radius: 0% 0% 30px 30px;
+}
+.audio_button_container i {
+	margin: 30px;
+}
+i {
+	font-size: 60px;
+}
+.audio_button_container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: fit-content;
+	margin: 50px;
+	gap: 30px;
+	background-color: #00688b;
+	border-radius: 0% 0% 30px 30px;
+}
+.audio_button_container i {
+	margin: 30px;
+}
+/* rotaitenig animation */
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+.rotate {
+	animation: rotate 10s linear infinite;
 }

@@ -5,6 +5,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 		<link rel="stylesheet" href="./style.css" />
+		<script
+			src="https://kit.fontawesome.com/98222a6cce.js"
+			crossorigin="anonymous"
+		></script>
 	</head>
 	<body>
 		<button id="button1">ungu solih bol end dar</button>
@@ -13,6 +17,24 @@
 			<div class="box"></div>
 			<div class="box"></div>
 		</div>
+		<div class="gaduurh">
+			<h1>Music Player <i id="music_rot" class="fa-solid fa-music"></i></h1>
+			<div id="audio">
+				<audio
+					id="audio-main"
+					src="./audio/1.mp3"
+					style="display: none"
+					controls
+				></audio>
+				<div class="audio_button_container">
+					<i id="befor-button" class="fa-solid fa-backward"></i>
+					<i id="play-pause-button" class="fa-solid fa-play"></i>
+					<i id="next-button" class="fa-solid fa-forward"></i
+					><i id="stop-button" class="fa-solid fa-stop"></i>
+				</div>
+			</div>
+		</div>
+
 		<script src="./main.js"></script>
 	</body>
 </html>
